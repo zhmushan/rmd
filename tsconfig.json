@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "ESNext",
+    "declaration": true,
+    "target": "ESNext",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "outDir": "lib"
+  },
+  "exclude": ["node_modules", "lib"]
+}
