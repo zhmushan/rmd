@@ -8,8 +8,8 @@ export function Markdown(
 ) {
   let v = "", setv: React.Dispatch<React.SetStateAction<string>>;
   if (src) {
+    [v, setv] = useState("");
     useEffect(() => {
-      [v, setv] = useState("");
       fetch(src).then(resp => {
         resp.text().then(text => setv(text));
       });
