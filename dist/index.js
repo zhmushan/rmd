@@ -4,8 +4,8 @@ const md = new MarkdownIt();
 export function Markdown({ src, children }) {
     let v = "", setv;
     if (src) {
+        [v, setv] = useState("");
         useEffect(() => {
-            [v, setv] = useState("");
             fetch(src).then(resp => {
                 resp.text().then(text => setv(text));
             });
